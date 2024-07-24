@@ -1,3 +1,12 @@
+
+COMO BAIXAR O PROJETO
+
+executar o seguinte comando:
+
+    git clone https://github.com/MulaManca/TesteInoveBanco.git
+
+----------------------------------------------------------------------------------------------
+
 ESTRUTURA DO PROJETO
 
 app.py -> Script principal que coordena a interação entre a API externa e o banco de dados.
