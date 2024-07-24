@@ -4,7 +4,7 @@ from psycopg2 import sql
 
 def conectar_bd():
     conn = psycopg2.connect(
-        dbname=os.getenv("DB_NAME", "test_db"),
+        dbname=os.getenv("DB_NAME", "inova_db"),
         user=os.getenv("DB_USER", "postgres"),
         password=os.getenv("DB_PASSWORD", "140999"),
         host=os.getenv("DB_HOST", "localhost"),
@@ -22,11 +22,11 @@ def criar_banco_de_dados():
     )
     conn.autocommit = True
     with conn.cursor() as cursor:
-        cursor.execute(f"SELECT 1 FROM pg_database WHERE datname = '{os.getenv('DB_NAME', 'test_db')}';")
+        cursor.execute(f"SELECT 1 FROM pg_database WHERE datname = '{os.getenv('DB_NAME', 'inova_db')}';")
         exists = cursor.fetchone()
         if not exists:
-            cursor.execute(sql.SQL("CREATE DATABASE {}").format(sql.Identifier(os.getenv("DB_NAME", "test_db"))))
-            print(f"Banco de dados '{os.getenv('DB_NAME', 'test_db')}' criado com sucesso.")
+            cursor.execute(sql.SQL("CREATE DATABASE {}").format(sql.Identifier(os.getenv("DB_NAME", "inova_db"))))
+            print(f"Banco de dados '{os.getenv('DB_NAME', 'inova_db')}' criado com sucesso.")
     conn.close()
 
 def criar_tabelas(conn):

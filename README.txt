@@ -23,17 +23,16 @@ Para instalar "psycopg2" e "requests" basta executar o seguinte comando no termi
 
 CONFIGURACAO BANCO DE DADOS
 
-1. Crie um banco de dados PostgreSQL com o nome "test_db".
-2. Configure as variáveis de ambiente para conexão com o banco de dados.
+1. Configure as variáveis de ambiente para conexão com o banco de dados.
     Linux/Mac:
-        export DB_NAME='test_db'
+        export DB_NAME='inova_db'
         export DB_USER='seu_usuario'
         export DB_PASSWORD='sua_senha'
         export DB_HOST='localhost'
         export DB_PORT='5432'
 
     Windows:
-        $env:DB_NAME='seu_banco_de_dados'
+        $env:DB_NAME='inova_db'
         $env:DB_USER='seu_usuario'
 	$env:DB_PASSWORD='sua_senha'
 	$env:DB_HOST='localhost'
