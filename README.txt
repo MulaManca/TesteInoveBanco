@@ -15,9 +15,9 @@ PRE-REQUISITOS
 -> Pacote "psycopg2" para Python (Usado para conexao com o PostgreSQL)
 -> Pacote "requests" para Python (Usado para chamadas a API externa)
 
-Para instalar "psycopg2" e "requests" basta executar o seguinte comando no terminal ou cmd.
+Para instalar "psycopg2" e "requests" basta executar o seguinte comando no terminal ou cmd:
 
-"pip install psycopg2-binary requests"
+    "pip install psycopg2-binary requests"
 
 ---------------------------------------------------------------------------------------------
 
